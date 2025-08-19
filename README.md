@@ -50,3 +50,28 @@ ai-assessment-system/
 ```bash
 git clone https://github.com/ADI14M/AI-ASSESSMENT-SYSTEM.git
 cd AI-ASSESSMENT-SYSTEM
+
+### 2️⃣ Install dependencies
+npm install 
+
+3️⃣ Configure MongoDB
+
+Update db.js with your MongoDB credentials:
+
+const mongoose = require('mongoose');
+
+mongoose.connect('your_connection_string_here', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('✅ MongoDB Connected!'))
+.catch(err => console.error('❌ MongoDB connection error:', err)); 
+
+4️⃣ Run the server
+node index.js  
+
+---
+
+📌 Author
+
+Aditya M
